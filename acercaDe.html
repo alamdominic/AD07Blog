@@ -1,93 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>CarsBlog</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acerca de - CarsBlog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .hero-section {
+      background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-section h1 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    .team-img {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #0d6efd;
+      transition: transform 0.3s ease;
+    }
+
+    .team-img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Header Navbar oficial -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid d-flex">
-    <a class="navbar-brand" href="#">CarsBlog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="clasificacionautos.html">Clasificación de autos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="noticiasTendencias.html">Noticias y Tendencias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reseñas.html">Reseñas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="acercaDe.html">Acerca de Nosotros</a>
-        </li>
-      </ul>
-<!--      
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
+    <div class="container-fluid d-flex">
+      <a class="navbar-brand" href="#">CarsBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="clasificacionautos.html">Clasificación de autos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticiasTendencias.html">Noticias y Tendencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reseñas.html">Reseñas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="acercaDe.html">Acerca de Nosotros</a>
+          </li>
+        </ul>
+        <!-- Buscador comentado según tu código original -->
+        <!--
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section mb-5">
+    <h1>Acerca de CarsBlog</h1>
+  </section>
+
+  <div class="container">
+    <!-- Introducción -->
+    <div class="row mb-5">
+      <div class="col-md-8 mx-auto text-center">
+        <h2 class="mb-3">Pasión por los Autos y la Velocidad</h2>
+        <p class="lead">
+          En nuestro blog compartimos las últimas novedades, reseñas, consejos y todo lo relacionado con el mundo automotriz. Desde autos clásicos hasta los modelos más innovadores, aquí encontrarás contenido para todos los amantes de los motores.
+        </p>
+      </div>
+    </div>
+
+    <!-- Valores y Misión -->
+    <div class="row mb-5 text-center">
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" class="bi bi-speedometer2 mb-3"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v4.793l2.146 2.147a.5.5 0 0 1-.708.708l-2.147-2.146V4.5A.5.5 0 0 1 8 4z" />
+            <path
+              d="M3.732 12.732a6 6 0 1 1 8.536 0 .5.5 0 1 1-.707-.707 5 5 0 1 0-7.122 0 .5.5 0 1 1-.707.707z" />
+          </svg>
+          <h4>Velocidad</h4>
+          <p>Actualizamos constantemente con noticias y pruebas para mantenerte al día.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-4 mt-md-0">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" class="bi bi-gear-fill mb-3"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+            <path
+              d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.54 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.54l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.434-2.54-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z" />
+          </svg>
+          <h4>Tecnología</h4>
+          <p>Analizamos las últimas innovaciones en motores, seguridad y diseño.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-4 mt-md-0">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" class="bi bi-people-fill mb-3"
+            viewBox="0 0 16 16">
+            <path
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+          </svg>
+          <h4>Comunidad</h4>
+          <p>Fomentamos un espacio para compartir experiencias y consejos entre aficionados.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipo -->
+    <div class="row mb-5">
+      <h2 class="text-center mb-4">Conoce al Equipo</h2>
+      <div class="col-md-4 text-center">
+        <img src="https://avatars.githubusercontent.com/u/97510604?v=4" alt="Dominic" class="team-img mb-3" />
+        <h5>Dominic</h5>
+        <p>Editor y apasionado por los autos deportivos.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="https://avatars.githubusercontent.com/u/93231057?v=4" alt="Ale" class="team-img mb-3" />
+        <h5>Ale</h5>
+        <p>Especialista en tecnología automotriz y novedades.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="https://avatars.githubusercontent.com/u/33851098?v=4" alt="Migue" class="team-img mb-3" />
+        <h5>Migue</h5>
+        <p>Redactor y entusiasta de los autos clásicos.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row mb-5">
+      <div class="col text-center">
+        <a href="contacto.html" class="btn btn-primary btn-lg">Contáctanos</a>
+      </div>
     </div>
   </div>
-</nav>
-    <div class="container mt-5">
-        <h2 class="text-center">Acerca de</h2>
 
-        <p class="lead text-center">¡Bienvenidos a <strong>CarsBlog</strong>!</p>
+  <!-- Footer oficial -->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="clasificacionautos.html" class="nav-link px-2 text-muted">Clasificacion de autos</a></li>
+        <li class="nav-item"><a href="noticiasTendencias.html" class="nav-link px-2 text-muted">Noticias y Tendencias</a></li>
+        <li class="nav-item"><a href="reseñas.html" class="nav-link px-2 text-muted">Reseñas</a></li>
+        <li class="nav-item"><a href="acercaDe.html" class="nav-link px-2 text-muted">Acerca de Nosotros</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2025 Pikachu, Inc</p>
+    </footer>
+  </div>
 
-        <p>En este espacio, nuestra pasión por los autos se convierte en contenido para todos los entusiastas del motor. Desde los últimos lanzamientos y reseñas de vehículos, hasta consejos de mantenimiento y guías de compra, nuestro objetivo es ofrecerte información valiosa y entretenida que te ayude a disfrutar aún más de tu experiencia automovilística.</p>
-
-        <h3>Aquí encontrarás:</h3>
-
-        <ul class="list-group mb-4">
-            <li class="list-group-item">
-                <strong>Reseñas de Autos:</strong> 
-                Análisis detallados de los modelos más recientes, con pros y contras, para que tomes decisiones informadas.
-            </li>
-            <li class="list-group-item">
-                <strong>Noticias del Sector:</strong> 
-                Mantente al día con las últimas novedades de la industria automotriz, incluyendo lanzamientos, innovaciones tecnológicas y eventos importantes.
-            </li>
-            <li class="list-group-item">
-                <strong>Clasificación de Autos:</strong> 
-                Comparativas y clasificaciones de diferentes modelos para ayudarte a elegir el mejor para ti.
-            </li>
-            <li class="list-group-item">
-                <strong>Consejos de Mantenimiento:</strong> 
-                Aprende a cuidar tu vehículo con nuestros consejos prácticos y guías paso a paso.
-            </li>
-        </ul>
-
-        <p>Nuestro equipo está compuesto por apasionados del automovilismo que comparten su conocimiento y experiencias para crear una comunidad donde todos puedan aprender y disfrutar. Ya seas un conductor experimentado o un novato en el mundo de los autos, aquí encontrarás algo que te inspire.</p>
-
-        <p class="text-center">¡Gracias por visitarnos y esperamos que disfrutes de tu estancia en <strong>CarsBlog</strong>! No dudes en dejarnos tus comentarios y sugerencias, ¡tu opinión es muy importante para nosotros!</p>
-    </div>
-
-    <!-- Enlace a Bootstrap JS y dependencias (opcional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</div>
-<div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="clasificacionautos.html" class="nav-link px-2 text-muted">Clasificacion de autos</a></li>
-      <li class="nav-item"><a href="noticiasTendencias.html" class="nav-link px-2 text-muted">Noticias y Tendencias</a></li>
-      <li class="nav-item"><a href="reseñas.html" class="nav-link px-2 text-muted">Reseñas</a></li>
-      <li class="nav-item"><a href="acercaDe.html" class="nav-link px-2 text-muted">Acerca de Nosotros</a></li>
-    </ul>
-    <p class="text-center text-muted">© 2025 Pikachu, Inc</p>
-  </footer>
-</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
