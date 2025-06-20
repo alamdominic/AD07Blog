@@ -1,57 +1,187 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CarsBlog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>CarsBlog</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid d-flex">
-    <a class="navbar-brand" href="#">CarsBlog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="clasificacionautos.html">Clasificación de autos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="noticiasTendencias.html">Noticias y Tendencias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reseñas.html">Reseñas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="acercaDe.html">Acerca de Nosotros</a>
-        </li>
-      </ul>
-<!--      
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="#">CarsBlog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="clasificacionautos.html"
+                >Clasificación de autos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticiasTendencias.html"
+                >Noticias y Tendencias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reseñas.html">Reseñas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acercaDe.html">Acerca de Nosotros</a>
+            </li>
+          </ul>
+          <!--      
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/TypeR.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                 ¡Uf, el Type R es una máquina increíble! La potencia te pega al asiento y la forma en que se agarra en las curvas es una locura. Cada vez que lo saco, me saca una sonrisa de oreja a oreja. Es un coche que se siente vivo y siempre te pide más. ¡Definitivamente no es para los que buscan pasar desapercibidos!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/NSX.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                El NSX es una obra de arte. Es elegante, potente y sorprendentemente cómodo para un superdeportivo. La forma en que combina la tecnología híbrida con el rendimiento puro es simplemente brillante. Cada viaje es una experiencia especial, y el sonido de ese motor... ¡Uff! Es un coche que te hace sentir exclusivo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/wrx.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Si buscas diversión pura, el WRX es el indicado. Con su tracción total, es una bestia en cualquier condición. No es el más lujoso, pero su rendimiento y la sensación de control que te da son inigualables. Es mi compañero perfecto para esos días de carretera sin límites. ¡Siempre listo para la aventura!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/YarisGR.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                ¡No te dejes engañar por su tamaño! El Yaris GR es un cohete de bolsillo. Es ágil, rápido y te permite sentir cada curva como si estuvieras en un rally. La verdad es que me sorprendió muchísimo lo capaz que es este pequeño. ¡Es puro músculo y diversión concentrada!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/Supra.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                El Supra es un sueño hecho realidad. Su diseño es imponente y su motor es una maravilla. La aceleración es brutal y te da una sensación de conexión con la carretera que pocos coches ofrecen. Es un coche que te hace voltear a ver, y cada vez que lo manejo, me siento como en una pista de carreras.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/Z.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                ¡El Nissan Z es la esencia de un deportivo! Su diseño es moderno y agresivo, y la respuesta del motor es instantánea. Es un coche que te invita a conducir, a sentir la carretera. Me encanta cómo combina la tradición de los deportivos japoneses con un toque fresco. ¡Pura emoción al volante!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/Camaro.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                 El Camaro es potencia americana en su máxima expresión. Su sonido es inconfundible y la aceleración te pega al asiento. Es un coche que impone respeto en la carretera. Es robusto, potente y siempre te da esa sensación de tener un verdadero "muscle car" bajo tus pies. ¡Un clásico moderno que nunca falla!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/Mustang.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                ¿Qué te puedo decir del Mustang? Es un ícono. Su diseño atemporal y el rugido de su motor lo hacen inconfundible. Es la combinación perfecta entre un crucero relajado y una bestia de la velocidad. Cada vez que lo enciendo, sé que me espera un buen rato. ¡Pura libertad sobre ruedas!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="./Pic/Corvette.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                El Corvette es la definición de un superdeportivo americano. Su diseño es espectacular y su rendimiento es de otro mundo. Es un coche que te hace sentir como si estuvieras en una pista de carreras, incluso en la carretera. La forma en que se maneja y la potencia que entrega son simplemente asombrosas. ¡Una joya en mi garage!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container"></div>
-<div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="clasificacionautos.html" class="nav-link px-2 text-muted">Clasificacion de autos</a></li>
-      <li class="nav-item"><a href="noticiasTendencias.html" class="nav-link px-2 text-muted">Noticias y Tendencias</a></li>
-      <li class="nav-item"><a href="reseñas.html" class="nav-link px-2 text-muted">Reseñas</a></li>
-      <li class="nav-item"><a href="acercaDe.html" class="nav-link px-2 text-muted">Acerca de Nosotros</a></li>
-    </ul>
-    <p class="text-center text-muted">© 2025 Pikachu, Inc</p>
-  </footer>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
-
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="clasificacionautos.html" class="nav-link px-2 text-muted"
+              >Clasificacion de autos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="noticiasTendencias.html" class="nav-link px-2 text-muted"
+              >Noticias y Tendencias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="reseñas.html" class="nav-link px-2 text-muted">Reseñas</a>
+          </li>
+          <li class="nav-item">
+            <a href="acercaDe.html" class="nav-link px-2 text-muted"
+              >Acerca de Nosotros</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2025 Pikachu, Inc</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
