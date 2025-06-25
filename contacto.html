@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CarsBlog - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid d-flex">
+      <a class="navbar-brand" href="#">CarsBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="clasificacionautos.html">Clasificación de autos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticiasTendencias.html">Noticias y Tendencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reseñas.html">Reseñas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercaDe.html">Acerca de Nosotros</a>
+          </li>
+        </ul>
+        <!-- Comentado el formulario de búsqueda
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div class="container py-4">
+    <h2 class="mb-4 text-center">Contacto</h2>
+
+    <!-- Lugar donde aparecerá la alerta -->
+    <div id="alertPlaceholder"></div>
+
+    <!-- Formulario -->
+    <form id="contactForm" novalidate>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com" required />
+        <div class="invalid-feedback">
+          Por favor ingresa un correo electrónico válido.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="messageTextarea" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <div class="invalid-feedback">
+          Por favor escribe un mensaje.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="clasificacionautos.html" class="nav-link px-2 text-muted">Clasificacion de autos</a></li>
+        <li class="nav-item"><a href="noticiasTendencias.html" class="nav-link px-2 text-muted">Noticias y Tendencias</a></li>
+        <li class="nav-item"><a href="reseñas.html" class="nav-link px-2 text-muted">Reseñas</a></li>
+        <li class="nav-item"><a href="acercaDe.html" class="nav-link px-2 text-muted">Acerca de Nosotros</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2025 Pikachu, Inc</p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS Bundle con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script>
+    (() => {
+      const alertPlaceholder = document.getElementById('alertPlaceholder');
+      const form = document.getElementById('contactForm');
+
+      // Función para mostrar alerta con botón de cierre
+      function showAlert(message, type) {
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = `
+          <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+          </div>
+        `;
+        alertPlaceholder.append(wrapper);
+      }
+
+      // Validación Bootstrap personalizada
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+
+        // Mostrar alerta de éxito
+        showAlert('Se ha enviado tu mensaje correctamente.', 'success');
+
+        // Limpiar formulario y quitar validación
+        form.reset();
+        form.classList.remove('was-validated');
+      });
+    })();
+  </script>
+</body>
+
+</html>
