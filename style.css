@@ -3,6 +3,14 @@ html {
     width: 100%;
   }
 
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(*){
+  animation-duration: 0.5s;
+}
+
+
 .card-img-top {
   height: 200px;
   object-fit: cover; /* Recorta la imagen sin deformarla */
